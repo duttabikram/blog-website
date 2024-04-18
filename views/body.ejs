@@ -1,0 +1,22 @@
+
+<%- include("partials/header.ejs") %>
+  <h1>Blog HomePage</h1>
+  <%-include("form.ejs") %>
+  <%-include("form2.ejs") %>
+  <%-include("form3.ejs") %>
+  <h1>All Posts</h1> 
+  <ol>
+    <% posts.forEach(post => { %>
+      <li><%= post.content %></li>
+    <% }); %>
+  </ol>
+ 
+
+  <%- include("partials/footer.ejs") %>
+
+  
+
+
+
+
+
